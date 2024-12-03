@@ -1,28 +1,50 @@
+html {
+    cursor: all-scroll;
+}
+
 body {
-    background-color: #dcdff4;
+    background-image: url("/src/images/painting-flowers.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: Helvetica, Arial, sans-serif;
+    cursor: url('/src/images/bee-cursor.png'), auto;
 }
 
 a {
-    color: #4E4DAE;
+    color: #A24353;
 }
 
 
 .container {
-    margin: 120px auto;
-    max-width: 600px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #CAA1AD;
+    max-height: 100%;
 }
 
 header {
-    margin-bottom: 30px;
+    padding-top: 10px;
+}
+
+main,
+header {
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 h1 {
     font-weight: 800;
-    font-size: 36px;
+    font-size: 56px;
     line-height: 1.5;
-    color: #4E4DAE;
+    color: #A24353;
     text-align: center;
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+input {
+    cursor: url('/src/images/bee-cursor.png'), auto;
 }
 
 form {
@@ -41,12 +63,13 @@ margin-bottom: 30px;
 font-size: 16px;
 border-radius: 50px;
 line-height: 20px;
-color: #4E4DAE;
+color: #A24353;
 }
+
 
 .submit-button {
 margin-left: 10px;
-background-color: #4E4DAE;
+background-color: #A24353;
 color: white;
 border: none;
 border-radius: 50px;
@@ -60,7 +83,7 @@ font-size: 15px;
     background-color: white;
     padding: 20px;
     line-height: 2;
-    border-left: 3px solid #4E4DAE;
+    border-left: 3px solid #A24353;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.03);
     border-radius: 10px;
 }
@@ -69,5 +92,6 @@ footer {
     text-align: center;
     font-size: 13px;
     margin-top: 30px;
+    padding-bottom: 30px;
 }
 
