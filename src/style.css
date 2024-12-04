@@ -49,13 +49,22 @@ input {
     cursor: url('/src/images/bee-cursor.png'), auto;
 }
 
-form {
-    padding: 30px;
+.form-container {
     background-color: white;
-    box-shadow: 0px 20px 60px rgba(65, 50 , 100, 0.08);
-    border-radius: 10px;
-    display: flex;
     margin-bottom: 30px;
+    padding: 15px 20px;
+    box-shadow: 0px 20px 60px rgba(65, 50 , 100, 0.08);
+    border-radius: 10px;}
+
+form {
+    display: flex;    
+}
+
+.hint {
+    line-height: 1.5;
+    font-size: 12px;
+    margin-top: 7px;
+    opacity: 0.6;
 }
 
 .instructions {
@@ -88,8 +97,14 @@ font-size: 15px;
     border-left: 3px solid #A24353;
     box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.03);
     border-radius: 10px;
-    color: #A24353
+    color: #A24353;
 }
+
+
+.hidden {
+   display: none; 
+}
+
 
 footer {
     text-align: center;
@@ -98,3 +113,18 @@ footer {
     padding-bottom: 30px;
 }
 
+.generating {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
