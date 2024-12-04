@@ -3,11 +3,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     font-family: Helvetica, Arial, sans-serif;
-    cursor: url('/src/images/bee-cursor.png'), auto;
+    cursor: url('./images/bee-cursor.png'), auto !important;
+    cursor: url('./images/bee-cursor.png'), default !important;
 }
 
 a {
     color: #A24353;
+}
+
+a:hover {
+    cursor: url('./images/bee-cursor.png'), auto !important;
 }
 
 
